@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Middle Earth AI Game Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application for visualizing the **Middle Earth AI Game**. This front-end interface allows you to track agents moving across a circular map, view their coordinates, balance, and alliances, all while maintaining a fantasy-themed aesthetic with Plotly.js.
 
-## Available Scripts
+## 🚀 Features
+- 🌍 **Circular Map Visualization** with Plotly.js.
+- 🎯 **Agent Tracking:** Displays agent balance, coordinates, and alliances.
+- 📊 **Legend Integration:** Explains colors for different agents.
+- 🎨 **Dark Themed UI:** Modern dark mode with custom CSS.
+- 📦 **React + Plotly.js:** Built using React and Plotly.js for dynamic visuals.
 
-In the project directory, you can run:
+## 📦 Project Setup
 
-### `npm start`
+### Prerequisites
+Ensure you have Node.js and npm installed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd middle-earth-tracker
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+3. Run the development server:
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Open `http://localhost:3000` in your browser.
 
-### `npm run build`
+## 📜 Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Select an Agent:** Choose an agent from the dropdown in the sidebar.
+2. **View Stats:** The interface will display the agent's balance, coordinates, and alliances.
+3. **Map Interaction:** The circular map shows agent positions, balance, and alliances.
+4. **Legend:** The legend explains the agent colors and other symbols on the map.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
+```
+/middle-earth-tracker
+├── public
+│   └── index.html
+├── src
+│   ├── App.js               # Main React component
+│   ├── App.css              # Custom styles for the UI
+│   └── index.js             # ReactDOM rendering
+├── package.json             # Project dependencies
+└── README.md                # Project documentation
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Customization
+### To adjust the styling:
+- Modify `src/App.css` for layout and dark theme changes.
+- Adjust `plot_bgcolor` and `paper_bgcolor` in the `layout` object inside `App.js`.
 
-### `npm run eject`
+### To modify agents:
+- Change the `agents` object in `App.js` to update agent names, coordinates, and balances.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Built With
+- **React.js:** Frontend Framework
+- **Plotly.js:** Data Visualization
+- **JavaScript (ES6):** Core Programming Language
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📖 Future Enhancements
+- ✅ Real-time data integration with Solana smart contracts.
+- ✅ Dynamic river and mountain generation.
+- ✅ Animated agent movement.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📝 License
+This project is open-source and available under the [MIT License](LICENSE).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📧 Contact
+For questions or collaborations, please contact: 
+Jordan J. Solomon ⬇️
 
-## Learn More
+Email: [jjsonchain@gmail.com](jjsonchain@gmail.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Discord: @jjs0660
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+X: [JJS_OnChain](https://x.com/JJS_OnChain)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
