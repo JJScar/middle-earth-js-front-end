@@ -1,0 +1,63 @@
+/* App.css - Custom Styling for the Map */
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.sidebar {
+  margin: 20px;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.sidebar label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.agent-info {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 12px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.map-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hover-info {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.main-part {
+  display: flex;
+  justify-content: space-between; /* Even spacing between elements */
+  align-items: center;           /* Vertically center the elements */
+  gap: 20px;   
+}
